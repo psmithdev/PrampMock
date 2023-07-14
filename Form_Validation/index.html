@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div>
+      <!-- first name -->
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="First Name"
+      />
+    </div>
+    <div>
+      <!-- last name -->
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Last Name"
+      />
+    </div>
+    <div>
+      <!-- email -->
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+      />
+    </div>
+    <div>
+      <!-- password -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+    </div>
+    <div>
+      <!-- confirm password -->
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm Password"
+      />
+    </div>
+    <div>
+      <!-- submit button -->
+      <button type="submit">Submit</button>
+    </div>
+  </body>
+</html>
